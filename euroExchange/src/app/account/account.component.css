@@ -1,0 +1,36 @@
+.container
+{
+    height: 100vh;
+    text-align: center;
+    background-image: url('../../assets/euro.jpg');
+}
+
+.title
+{
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.info
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button
+{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 30px;
+
+}
+
+button:hover
+{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

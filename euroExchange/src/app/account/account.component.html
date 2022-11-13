@@ -1,0 +1,21 @@
+<div class="container">
+    <button (click)="logOut()">LogOut</button>
+   
+    <div class="title">
+        <h1>Money: {{user.money}}zl</h1>
+    </div>
+    <div class="info" *ngFor="let item of change2.rates">
+        <h2>Information</h2>
+        <h3>table number: {{item.no}}</h3>
+        <h3>Date of publication: {{item.effectiveDate}}</h3>
+        <h3>Euro average exchange rate: {{item.mid}}</h3>
+    </div>
+
+    <div class="change" *ngFor="let item of change2.rates">
+        <h1>Convert your money to Euro: {{user.money / item.mid | currency: 'EUR'}}</h1>
+    </div>
+</div>
+
+
+
+
